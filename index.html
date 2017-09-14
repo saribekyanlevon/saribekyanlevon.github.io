@@ -110,6 +110,23 @@
 			color: #eee;
 			border-bottom-color: rgba(238, 238, 238, .6);
 		}
+
+		.record p {
+			margin-top: -6vh;
+			color: #929292;
+			font-size: 1em;
+		}
+
+		.record span {
+			color: #eee;
+			border-bottom: 1px dashed rgba(238, 238, 238, .2);
+		}
+
+		.record span:hover {
+			cursor: help;
+			color: #fff;
+			border-bottom: 1px dashed rgba(255, 255, 255, .6);
+		}
 	</style>
 
 	<script>
@@ -130,6 +147,7 @@
 				<h1>Оксимирон не выпускает новые песни уже</h1>
 			</div>
 		</div>
+
 		<div class="counter row" id="counter">
 			<div class="unit col-lg-2 col-md-3 col-sm-4 col-xs-12">
 				<div class="wrap">
@@ -154,6 +172,12 @@
 					<span class="number seconds">00</span>
 					<p class="caption">Секунд</p>
 				</div>
+			</div>
+		</div>
+
+		<div class="record row">
+			<div class="col-lg-5 col-md-8 col-sm-9 col-xs-12">
+				<p>предыдущий резульат и рекорд: <span title="(20 апреля 2016 - 14 сентября 2017)">511 дней 17:43:02</span></p>
 			</div>
 		</div>
 
