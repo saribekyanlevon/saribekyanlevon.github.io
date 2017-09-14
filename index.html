@@ -112,6 +112,10 @@
 		}
 
 		.record p {
+			margin-bottom: 10vh;
+		}
+
+		.record p {
 			margin-top: -6vh;
 			color: #929292;
 			font-size: 1em;
@@ -126,6 +130,17 @@
 			cursor: help;
 			color: #fff;
 			border-bottom: 1px dashed rgba(255, 255, 255, .6);
+		}
+
+		.record .tooltip {
+			visibility: hidden;
+			color: #eee;
+		}
+
+		@media (max-width: 768px) {
+			.record .tooltip {
+				visibility: visible;
+			}
 		}
 	</style>
 
@@ -177,7 +192,7 @@
 
 		<div class="record row">
 			<div class="col-lg-5 col-md-8 col-sm-9 col-xs-12">
-				<p>предыдущий резульат и рекорд: <span title="(20 апреля 2016 - 14 сентября 2017)">511 дней 17:43:02</span></p>
+				<p>предыдущий резульат и рекорд: <span title="20 апреля 2016 - 14 сентября 2017">511 дней 17:43:02</span> <i class="tooltip">(20 апреля 2016 - 14 сентября 2017)</i></p>
 			</div>
 		</div>
 
