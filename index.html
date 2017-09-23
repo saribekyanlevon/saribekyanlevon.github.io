@@ -111,36 +111,29 @@
 			border-bottom-color: rgba(238, 238, 238, .6);
 		}
 
-		.record p {
+		.last p, .record p {
 			margin-bottom: 10vh;
 		}
 
-		.record p {
+		.last p, .record p {
 			margin-top: -6vh;
 			color: #929292;
 			font-size: 1em;
 		}
 
-		.record span {
+		.record p {
+			margin-top: -8vh;
+		}
+
+		.last span, .record span {
 			color: #eee;
 			border-bottom: 1px dashed rgba(238, 238, 238, .2);
 		}
 
-		.record span:hover {
+		.last span:hover, .record span:hover {
 			cursor: help;
 			color: #fff;
 			border-bottom: 1px dashed rgba(255, 255, 255, .6);
-		}
-
-		.record .tooltip {
-			visibility: hidden;
-			color: #eee;
-		}
-
-		@media (max-width: 768px) {
-			.record .tooltip {
-				visibility: visible;
-			}
 		}
 	</style>
 
@@ -190,22 +183,34 @@
 			</div>
 		</div>
 
+		<div class="last row">
+			<div class="col-lg-5 col-md-8 col-sm-9 col-xs-12">
+				<p>предыдущий результат: <span title="14 сентября 2017 - 21 сентября 2017">7 дней 09:37:22</span></p>
+			</div>
+		</div>
+
 		<div class="record row">
 			<div class="col-lg-5 col-md-8 col-sm-9 col-xs-12">
-				<p>предыдущий результат и рекорд: <span title="20 апреля 2016 - 14 сентября 2017">511 дней 17:43:02</span> <i class="tooltip">(20 апреля 2016 - 14 сентября 2017)</i></p>
+				<p>рекорд: <span title="20 апреля 2016 - 14 сентября 2017">511 дней 17:43:02</span></p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<p class="author">идея: <a href="http://disq.us/p/1kuutcu" target="_blank">the flow</a>, дизайн + код: <a href="https://vk.com/saribekyanlevon" target="_blank">lova</a></p>
+				<p class="author">идея: <a href="http://disq.us/p/1kuutcu" target="_blank">the flow</a>, дизайн + код: <a href="https://t.me/saribekyanlevon" target="_blank">lova</a></p>
 			</div>
 		</div>
 	</div>
 
 	<script>
-		//var lastRelease = '20 Apr 2016 4:01 pm UTC+3';
+		/*
+
+		var lastRelease = '20 Apr 2016 4:01 pm UTC+3';
 		var lastRelease = '14 Sep 2017 9:44 am UTC+3';
+
+		*/
+
+		var lastRelease = '21 Sep 2017 7:21 pm UTC+3';
 
 		function getTimeDifference(lastReleaseDate) {
 			var t =  Date.parse(new Date()) - Date.parse(lastReleaseDate);
